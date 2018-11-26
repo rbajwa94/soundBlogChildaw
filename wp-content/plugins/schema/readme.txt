@@ -3,9 +3,9 @@ Contributors: hishaman, schemapress
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NGVUBT2QXN7YL
 Tags: schema, schema.org, json, json-ld, google, seo, structured data, markup, search engine, search, rich snippets, breadcrumbs, social, post, page, plugin, wordpress, content, article, news, search results, site name, knowledge graph, social, social profiles, keywords, meta-tags, metadata, tags, categories, optimize, ranking, search engine optimization, search engines, serp, sitelinks, google sitelinks, sitelinks search box, google sitelinks search box, semantic, structured, canonical, custom post types, post type, title, terms, media, images, thumb, featured, url, video, video markup, video object, VideoObject, video schema, audio object, AudioObject, audio schema, audio, sameAs, about, contact, amp, mobile, taxonomy
 Requires at least: 4.0
-Tested up to: 4.9.7
+Tested up to: 4.9.8
 Requires PHP: 5.4
-Stable tag: 1.7
+Stable tag: 1.7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -155,6 +155,14 @@ Yes, Schema plugin will detect AMP plugin and output a more complete and valid s
 5. Configuration Wizard.
 
 == Changelog ==
+
+= 1.7.2 =
+* Fix: Shortcades was not excluded from description.
+* Fix: Set publicly_queryable to false in Schema post type to disable creation of single pages.
+* Fix: Removed a notice in AMP pages, and fixed markup output.
+* Fix: Media uploader was not working properly in post meta.
+* Enhancement: Improved performance of markup output on AMP pages.   
+* Updated the readme.txt file, and pumped the tested WP version to 4.9.8
 
 = 1.7.1 =
 * Added new function schema_wp_post_meta_fields, stop loading post meta directly.
